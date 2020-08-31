@@ -1,0 +1,30 @@
+# Programs Notes:
+
+return 0 -> Meaning?
+return 1 -> Meaning?
+
+# For execution of program python p2_calc.py
+
+Conditions for checking 
+    addition: 
+        Nothing
+    subtraction: 
+        num1 == num2
+        num1 > num2
+        num2 > num1
+    multiplication:
+        Nothing
+    division:
+        num1 == num2 
+            if num1 = 0, then division by 0 not posible
+        num1 > num2
+            if num2 = 0, then division by 0 not posible
+            else division possible
+        num2 > num1
+            if num1 = 0, then division by 0 not posible
+            else division possible
+
+** Important points of above program:
+
+    how to use f in print statement
+    when to use return 0, return 1-> What it does?

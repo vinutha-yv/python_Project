@@ -1,0 +1,244 @@
+ctrl + B
+ctrl + ~ -> OPENS TERMINAL
+python filename -> executes the program
+ALT + z -> Makes the long line move to next line(fits in the screen)
+F2-> Rename the file
+
+code . -> in cmd terminal should open visual code
+
+
+python 
+      high level 
+      beginners
+      
+      GDSDFFSHJASDDFFFFFFSFFFSFLSFSDDSDDSASDSFFFFFSFSFSFSFFFFFFFCCXCNXCXCDCDSFSFDSFDFCDSCDSCXSCDSCDSCNSCSCDLWQDQLDEEWDEWFEWVDEVDVVCDXCXSCDFEWFVFDVFDSVCDACSACSACXBSAJCEWFEWDWDSXZXZXZXZXXZCXZCZCZCCZCEEEEEEDCCZCZCCCEDCCEEXEEECCECEEFCXXXXXXXXXXXXXXXXWRFVCCEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+
+
+identifiers
+      identifiers is a name used to identify function, variable, class, module or any other object.
+      The identifiers starts with letter A-Z,  a-z  or underscore and digits.
+      python doesnot allow any punctuations except underscores.
+      file name should be singleword. 
+      python is case sensitive. 
+      class name will start with upperletters.
+      Rest all will start with lower case letters.
+
+      Try below in terminal:
+      First type python
+      Then write import os
+      import os
+>>> dir (os)
+This will list classes, functions, variables.....
+
+>>> os.DirEntry
+<class 'nt.DirEntry'>
+>>> os.MutableMapping
+<class 'collections.abc.MutableMapping'>
+
+Only rule is : which are visible outside: classes, functions, methods: These are always visible outside.
+Things like variables may be visible or may not be visible.
+
+#Few Functions.
+
+
+1) Dunder functions(which will have_ before and after function _): Means which are builtin -> Which can also be changed.-> We can change its behaviour.
+2) protected functions: (This has _ in the begining.) Which we cannot change its behaviour. Even if we want we cannot change the behaviour.
+
+classes should always use capital letters rest all can be small letters.
+
+reserved word:
+      This cannot be used as a constant or variable.
+      reserved words should be completely in lowercase letters.
+      and
+      assert
+      break
+      *class
+      continue
+      *def
+      del
+      *elif
+      *else
+      *except
+      exec
+      *for
+      from
+      *finally
+      global
+      *if
+      import
+      in
+      is
+      lambda
+      not
+      or
+      pass
+      print
+      raise
+      return
+      *try
+      *while
+      *with
+      yield
+
+All of the above with * will have blocks of expression ending with colon and indentation.
+* return statement always returns the function value.
+     it means function ends
+
+* A blank line should be used only in between functions (Where there is a block of expressions.)
+
+
+*Comments:
+      Invisible to interpreter-> reads code and executes the code
+      single line -> Begins with #
+      Multiline Comments -> Begins and ends with ''' or """ 
+      python -h -> gives help options -> 
+      python -v ->whatever things are needed to start are beign written over there, it is basically starts the interpreter.
+
+
+
+      Path variables-> Throughout the program it is visible
+
+PYTHONSTARTUP: file executed on interactive startup (no default)
+
+PYTHONPATH   : ';'-separated list of directories prefixed to the
+               default module search path.  The result is sys.path.
+
+PYTHONHOME   : alternate <prefix> directory (or <prefix>;<exec_prefix>).
+               The default module search path uses <prefix>\python{major}{minor}. -> Alternative module search path.
+
+PYTHONCASEOK : ignore case in 'import' statements (Windows). -> Used only in windows, it will instruct python
+to find the first case insensitive match in an import statement. 
+
+* Always use ctrl z to exit the python , instead of exit()
+Try below inside python:
+ import os
+import sys
+for i in sys.path:
+print(i)
+
+os -> is a library
+sys -> is that library which works with our current environment
+
+# Assigning values to variables
+
+a = 5 (from right hand side we are Assigning) [It reads from right to left always, It makes size of box integer, names it as and assigns value = 5]
+**Single Assignment -> Above open -> id(a) -> gives the memory value -> hex (id(5)), hex(id(5)), hex(id(a))
+
+** Multiple Assignment of data [Tuple embacking] or [tuple unpacking]
+a = b = c = 8
+
+
+# Data types:
+
+>>> type(7)
+<class 'int'>
+>>> type(7.0)
+<class 'float'>
+>>> type(7 + 8j)
+<class 'complex'>
+>>> type("7 + 8j")
+<class 'str'>
+>>> type(["7 + 8j"])
+<class 'list'>
+>>> type((["7 + 8j"],))
+<class 'tuple'>
+>>> type({(["7 + 8j"],)})
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unhashable type: 'list'
+>>> type({1})
+<class 'set'>
+>>> type({1:2})
+<class 'dict'>
+>>>
+
+
+
+
+
+# Operators:
+
+Operators are of 7 types:
+1)  arithmetic :
+        + -> addition
+        - -> subtraction
+        * -> multiplication
+        / -> division symbol gives floating point value, also known as float division, integer division
+        % -> called as modulus -> this gives us remainder. 
+        // -> div -> gives quotient
+        ** -> exponent -> To the power of -> 
+
+2)  comparison or relational -> This gives us true or false (boolean)
+        == (Equality operator)
+        != (Not Equals to)
+        > (greater than)
+        < (less than)
+        >= (greather than or equals to)
+        <= (less than or equals to)
+
+3)  Assignment: 
+        =
+        += (a = 5, a += 5,  so a = 5 + 5 , a = 10)
+        -= ( a = 5, a -= 5 , a = 0 )
+        /= ( a = 5, a /= 5, a = 1.0)
+        %= ( a = 6, a %= 5, a = 1)
+        *= (a = 6, a *= 2, a = 12)
+        //= (a = 4, a //= 3, a = 1)
+        **= (a = 3, a **= 4, a = 81)
+
+4)  logical 
+        and (returns true if both statements are true)
+        or (returns true if one of the statements is true)
+        not (Reverse the result, returns false if the result is true)
+
+5)  bit wise : Bitwise operators are used to compare (binary) numbers:
+        & (binary and)
+        | (binary or)
+        ^ (binary xor)
+        ~ (ones complement)
+        << (binary left shift)
+        >> (binary right shift)
+
+6)  membership 
+        in [Returns True if a sequence with the specified value is present in the object]
+        not in [Returns True if a sequence with the specified value is not present in the object]
+        
+7)  identity
+        is [Returns True if both variables are the same object]
+        is not [Returns True if both variables are not the same object]
+
+
+# operator precedence : Which operator has highest precedence.
+    first bracket has highest precedence
+    two brackets
+    second one is exponents
+
+    ()
+    **
+    ~ + - (Bit wise NOT, unary plus, unary minus)
+    * / % //
+    + -
+    >> <<
+    &
+    ^ |
+    <= == !=
+    Assignment operators
+    is is not
+    in not in
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

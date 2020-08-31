@@ -1,0 +1,115 @@
+Python is a high-level language, inpterpreted object oriented scripting language.
+
+Interpreted
+interactive
+object - oriented
+
+beginner's language
+easy to learn, read, maintain
+broad standard library
+interactive mode
+portable
+extendable
+Database support
+GUI programming
+Scalable
+scripting language
+dynamic typing and dynamic type checking
+automatic garbage collection
+
+programming paradigms
+    Procedural
+    Functional
+    Structural
+    Object oriented programming
+
+time taken for code development -> 
+time taken for writing the code + time taken for executing the code 
+
+cPython -> C + Python
+Jpython -> Java + Python
+IronPython -> C# + Python
+PyPy (dont get confused by this - PyPI) -> Python + Python
+
+all the softwares/ applications/code is made up of mainly 2 things-
+    variables - value set
+    functions
+
+values
+    Primary data types
+varaibles - memory location of the values stored
+
+operation - 
+    decision making
+    looping
+
+decision making
+    python assumes any non-zero and not null values as True, and if the value is 0 or Null, that determines to False.
+
+Single statement, multiple statements
+a single if can work. elif and else would not work without if
+
+
+if expression is True:
+    do this
+elif expression is True:
+    do this
+elif expression is True:
+    do this
+elif expression is True:
+    do this
+elif expression is True:
+    do this
+elif expression is True:
+    do this
+else: (if nothing is True)
+    do this
+
+
+Loops:
+    allows us to execute a statement or a group of statement for 
+        a fixed number of times, 
+        or for a fixed set of values 
+        or until a particular condition is met.
+
+    for
+        a fixed number of times-> allows us to change the contents inside the box
+            for number in range(fixed_number_of_times):
+                # do something
+        or for a fixed set of values
+            for value in set_of_values:
+                # do something
+    while
+        or until a particular condition is met.
+
+
+range(start, stop, (direction)step), range only returns integer values
+        0               +       1
+range(5) = 0 till 5 -> 0 upto 4 when iterated   
+
+range(4, 10) => 4,5,6,7,8,9 when looped
+
+Python chr() and ord()
+
+Python's built-in function chr() is used for converting an Integer to a Character, 
+while the function ord() is used to do the reverse, i.e, convert a Character to an Integer.
+
+The input() function allows user input.
+
+
+Important: (0 - 127)
+    Ascii Codes     Symbol
+    48 - 57         0 - 9
+    65 - 90         A - Z
+    97 - 122        a - z
+    Rest all are symbols.
+
+loop control statements
+    break -> terminated the loop statement and transfers execution  to the statement immediately following the loop
+    continue -> causes the loop to skip the remainder of its body and work on the next iteration
+    pass - > do nothing
+
+
+***For trying inside python:
+    >>> for i in range(4, 8):
+...     print(i)
